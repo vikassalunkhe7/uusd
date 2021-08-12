@@ -1,0 +1,86 @@
+.stm_services_grid__posts {
+  margin: 0 -15px; }
+  .stm_services_grid__posts_hover {
+    transition: .3s ease; }
+    .stm_services_grid__posts_hover:hover {
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35); }
+      .stm_services_grid__posts_hover:hover .read_more {
+        opacity: 1;
+        transform: translateX(0); }
+        .stm_services_grid__posts_hover:hover .read_more i {
+          opacity: 1;
+          transform: translateX(0); }
+  .stm_services_grid__posts_single {
+    width: 33.3333%;
+    padding: 0 15px;
+    margin: 0 0 30px;
+    transition: 0s ease; }
+    .stm_services_grid__posts_single__inner {
+      padding: 30px;
+      background-color: #fff; }
+    .stm_services_grid__posts_single_title {
+      position: relative;
+      padding: 30px 0 0;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 700; }
+      .stm_services_grid__posts_single_title:after {
+        content: '';
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 47px;
+        height: 5px; }
+    .stm_services_grid__posts_single_meta {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      -ms-flex-align: center;
+          align-items: center;
+      min-height: 34px; }
+      .stm_services_grid__posts_single_meta .read_more {
+        opacity: 0;
+        font-size: 16px;
+        font-weight: 700;
+        transform: translateX(-10px);
+        transition: .3s ease;
+        vertical-align: top; }
+        .stm_services_grid__posts_single_meta .read_more i {
+          position: relative;
+          top: 2px;
+          margin-left: 4px;
+          font-size: 20px;
+          opacity: 0;
+          transform: translateX(-5px);
+          transition: .3s .1s ease; }
+      .stm_services_grid__posts_single_meta .service_cost {
+        font-size: 24px;
+        letter-spacing: 0.2px;
+        font-weight: 700; }
+
+.stm_services_grid__categories {
+  padding: 10px 15px;
+  margin: 0 0 40px;
+  text-align: center; }
+  .stm_services_grid__categories_single {
+    display: inline-block;
+    padding: 15px 20px;
+    margin: 0 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer; }
+    .stm_services_grid__categories_single:hover, .stm_services_grid__categories_single.mbc {
+      color: #fff; }
+
+@media only screen and (max-width: 768px) {
+  .stm_services_grid__posts_single {
+    width: 50%; } }
+
+@media only screen and (max-width: 580px) {
+  .stm_services_grid__posts_single {
+    width: 100%; } }

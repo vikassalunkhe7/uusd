@@ -1,0 +1,19 @@
+.stm_news_widget .stm_news_grid__single {
+  width: 100%; }
+
+.stm_news_widget .stm_news_grid__image {
+  float: left;
+  margin: 0 20px 0 0; }
+
+.stm_news_widget .stm_news_grid__content {
+  overflow: hidden; }
+  .stm_news_widget .stm_news_grid__content h4 {
+    padding: 0;
+    margin: -4px 0 10px 0;
+    font-size: 16px;
+    line-height: 24px; }
+
+.stm_news_widget .stm_news_grid__category {
+  opacity: .5; }
+  .stm_news_widget .stm_news_grid__category:hover {
+    opacity: 1; }

@@ -1,0 +1,2026 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Universal USD</title>
+    <style type="text/css">
+        @keyframes earthrotate {
+            from {
+                background-position-x: 0px;
+            }
+
+            to {
+                background-position-x: 630px;
+            }
+        }
+
+        @keyframes earthmove {
+            0% {
+                margin-left: -235px
+            }
+
+            90% {
+                margin-left: 100%;
+            }
+
+            100% {
+                margin-left: 100%;
+            }
+        }
+
+        .wrapper {
+            margin: 0 auto;
+            display: block;
+            margin-top: 200px;
+            perspective: 500px;
+            perspective-origin: 40% 50%;
+        }
+        .vc_custom_heading.text_align_left.has_icon {
+    z-index: 99;
+    position: absolute;
+    margin-top: 100px;
+}
+
+        .earth .planet {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background-size: 630px;
+            border-radius: 50%;
+            background-image: url(https://secure.i.telegraph.co.uk/multimedia/archive/02271/world-at-night_2271534k.jpg);
+            transform-style: preserve-3d;
+            box-shadow: inset 40px 0 80px 6px rgb(0, 0, 0),
+                inset -6px 0 12px 4px rgba(255, 255, 255, 0.2);
+            animation: earthrotate 10s, earthmove 20s;
+            animation-duration: 10s, 20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform: rotate(12deg);
+        }
+
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+
+
+        .start-main-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+        }
+    </style>
+    <link rel='stylesheet' id='wp-block-library-css'
+        href='wp-includes/css/dist/block-library/style.mind96d.css?ver=5.6.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='rs-plugin-settings-css'
+        href='wp-content/plugins/revslider/public/assets/css/rs60587.css?ver=6.3.6' type='text/css' media='all' />
+    <style id='rs-plugin-settings-inline-css' type='text/css'>
+        #rs-demo-id {}
+    </style>
+    <link rel='stylesheet' id='contact-form-7-css'
+        href='wp-content/plugins/contact-form-7/includes/css/styles9dff.css?ver=5.3.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='stm-stmicons-css'
+        href='wp-content/uploads/sites/12/stm_fonts/stmicons/stmicons20b9.css?ver=1.0.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='stm_megamenu-css'
+        href='wp-content/plugins/stm-configurations/megamenu/assets/css/megamenuad05.css?ver=1.4' type='text/css'
+        media='all' />
+    <link rel='stylesheet' id='font-awesome-css'
+        href='../../maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min1849.css?ver=4.7.0' type='text/css'
+        media='all' />
+    <link rel='stylesheet' id='vcw-style-css'
+        href='wp-content/plugins/virtual_coin_widgets/assets/css/vcw605a.css?ver=2.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='parent-style-css' href='wp-content/themes/crypterio/styled96d.css?ver=5.6.1'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='bootstrap-css'
+        href='wp-content/themes/crypterio/assets/css/bootstrap.minf661.css?ver=1626947218' type='text/css'
+        media='all' />
+    <link rel='stylesheet' id='stm-font-awesome-css'
+        href='wp-content/themes/crypterio/assets/fonts/font-awesome/css/font-awesome.minf661.css?ver=1626947218'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='crypterio-style-css'
+        href='wp-content/themes/crypterio-child/stylef661.css?ver=1626947218' type='text/css' media='all' />
+    <link rel='stylesheet' id='crypterio-layout-css'
+        href='wp-content/themes/crypterio/assets/css/ico_agency/mainf661.css?ver=1626947218' type='text/css'
+        media='all' />
+    <style id='crypterio-layout-inline-css' type='text/css'>
+        .page_title {
+            background-repeat: repeat !important;
+        }
+
+        body.site_creative_ico .vc_custom_heading.stripe_bottom:before,
+        body.site_creative_ico .vc_custom_heading.stripe_top:before {
+            background: linear-gradient(to right, #062640, #2cd9a2);
+        }
+
+        .mtc,
+        .mtc_h:hover,
+        .stm_news_list__more.loading:before,
+        .site_crypto_blog ul.comment-list .comment .comment-author a,
+        .site_crypto_blog ul.comment-list .comment .comment-meta a {
+            color: #062640 !important
+        }
+
+        .stc,
+        .stc_h:hover,
+        .stm_post_view__related .stm_news_widget .stm_news_grid__category a:hover,
+        .stm_posts_carousel_single__category:hover a,
+        .stm_single_ico__button.stm_single_ico__button_whitepaper i,
+        .font-color_secondary {
+            color: #2cd9a2 !important
+        }
+
+        .ttc,
+        .ttc_h:hover {
+            color: #062640 !important
+        }
+
+        .mbc,
+        .mbc_h:hover {
+            background-color: #062640 !important
+        }
+
+        .sbc,
+        .sbc_h:hover,
+        .sbc_a:after,
+        .stm_news_carousel .owl-controls .owl-nav>div:hover,
+        .stm_single_ico__comments h4.comments-title:after,
+        .secondary_bg_color {
+            background-color: #2cd9a2 !important
+        }
+
+        .tbc,
+        .tbc_h:hover,
+        .tbc_a_h:hover:after,
+        .stm_single_ico__button,
+        .stm_single_ico__button.stm_single_ico__button_whitepaper:hover {
+            background-color: #062640 !important
+        }
+
+        .mbdc,
+        .mbdc_h:hover {
+            border-color: #062640 !important
+        }
+
+        .sbdc,
+        .sbdc_h:hover,
+        .stm_news_carousel .owl-controls .owl-nav>div:hover {
+            border-color: #2cd9a2 !important
+        }
+
+        .tbdc,
+        .tbdc_h:hover,
+        .stm_single_ico__button.stm_single_ico__button_whitepaper {
+            border-color: #062640 !important
+        }
+
+        .stm_post_info .post_thumbnail img {
+            width: 100% !important;
+        }
+    </style>
+    <link rel='stylesheet' id='select2-css'
+        href='wp-content/themes/crypterio/assets/css/vendors/select2.minf661.css?ver=1626947218' type='text/css'
+        media='all' />
+    <link rel='stylesheet' id='crypterio-default-font-css'
+        href='https://fonts.googleapis.com/css?family=Roboto%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%26subset%3Dlatin%2Cgreek%2Cgreek-ext%2Cvietnamese%2Ccyrillic-ext%2Clatin-ext%2Ccyrillic%7CRajdhani%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%26subset%3Dlatin%2Cgreek%2Cgreek-ext%2Cvietnamese%2Ccyrillic-ext%2Clatin-ext%2Ccyrillic&amp;ver=1626947218'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='crypterio-shared-css'
+        href='wp-content/themes/crypterio/assets/css/shared/mainf661.css?ver=1626947218' type='text/css' media='all' />
+    <link rel='stylesheet' id='js_composer_front-css'
+        href='wp-content/plugins/js_composer/assets/css/js_composer.mine6df.css?ver=6.5.0' type='text/css'
+        media='all' />
+    <link rel='stylesheet' id='stm_hb_main-css'
+        href='wp-content/plugins/pearl-header-builder/assets/frontend/assets/css/header/main1a90.css?ver=1626947219'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='stm_hb_sticky-css'
+        href='wp-content/plugins/pearl-header-builder/assets/frontend/assets/vendor/sticky1a90.css?ver=1626947219'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='fontawesome-css'
+        href='wp-content/plugins/pearl-header-builder/assets/frontend/assets/css/font-awesome.min1a90.css?ver=1626947219'
+        type='text/css' media='all' />
+    <script type='text/javascript' src='wp-includes/js/jquery/jquery.min9d52.js?ver=3.5.1' id='jquery-core-js'></script>
+    <script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.mind617.js?ver=3.3.2'
+        id='jquery-migrate-js'></script>
+    <script type='text/javascript' src='wp-content/plugins/revslider/public/assets/js/rbtools.min0587.js?ver=6.3.6'
+        id='tp-tools-js'></script>
+    <script type='text/javascript' src='wp-content/plugins/revslider/public/assets/js/rs6.min0587.js?ver=6.3.6'
+        id='revmin-js'></script>
+    <script type='text/javascript'
+        src='wp-content/plugins/stm-configurations/megamenu/assets/js/megamenuad05.js?ver=1.4'
+        id='stm_megamenu-js'></script>
+    <script type='text/javascript' src='../../static.stylemixthemes.com/shared/envato-switcher/inlined96d.js?ver=5.6.1'
+        id='envato-switcher-js'></script>
+    <script type='text/javascript'
+        src='wp-content/themes/crypterio/assets/js/jquery.simplemarqueef661.js?ver=1626947218'
+        id='simplemarquee-js'></script>
+    <link rel="https://api.w.org/" href="wp-json/index.html" />
+    <link rel="alternate" type="application/json" href="wp-json/wp/v2/pages/2.json" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" />
+    <meta name="generator" content="WordPress 5.6.1" />
+    <link rel='shortlink' href='index.html' />
+    <link rel="alternate" type="application/json+oembed"
+        href="wp-json/oembed/1.0/embed0462.json?url=https%3A%2F%2Fcrypterio.stylemixthemes.com%2Ficoagency%2F" />
+    <link rel="alternate" type="text/xml+oembed"
+        href="wp-json/oembed/1.0/embed0f3b?url=https%3A%2F%2Fcrypterio.stylemixthemes.com%2Ficoagency%2F&amp;format=xml" />
+    <script
+        type="text/javascript">window.wp_data = { "crypterio_get_currency_data": "a723c6a210", "stm_ajax_add_review": "d9ad4652b1", "crypterio_install_plugin": "ba3c524c0f", "crypterio_load_stm_news_list": "095a6d0cc1", "stm_ajax_load_events": "ed69b0ae6d", "stm_ajax_load_portfolio": "a83fecd7c9", "stm_custom_register": "ca81825418", "stm_ajax_add_event_member": "f386be3a9e", "stm_whitelist_data": "c36b3d0dc7", "stm_submit_ico": "2797a8ee8b", "stm_icons_load": "743313d5c8", "stm_wl": "b172a1872b", "stm_ico_search": "e6fd265725" };</script>
+    <script type="text/javascript">
+        var ajaxurl = 'wp-admin/admin-ajax.html';
+    </script>
+    <style type="text/css">
+        .recentcomments a {
+            display: inline !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    </style>
+    <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress." />
+    <meta name="generator"
+        content="Powered by Slider Revolution 6.3.6 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+    <link rel="icon" href="wp-content/uploads/sites/favi-con-uusd.png" sizes="32x32" />
+    <link rel="icon" href="wp-content/uploads/sites/favi-con-uusd.png"
+        sizes="192x192" />
+    <link rel="apple-touch-icon" href="wp-content/uploads/sites/favi-con-uusd.png" />
+    <meta name="msapplication-TileImage"
+    href="wp-content/uploads/sites/favi-con-uusd.png" />
+    <script type="text/javascript">function setREVStartSize(e) {
+            //window.requestAnimationFrame(function() {				 
+            window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
+            window.RSIH = window.RSIH === undefined ? window.innerHeight : window.RSIH;
+            try {
+                var pw = document.getElementById(e.c).parentNode.offsetWidth,
+                    newh;
+                pw = pw === 0 || isNaN(pw) ? window.RSIW : pw;
+                e.tabw = e.tabw === undefined ? 0 : parseInt(e.tabw);
+                e.thumbw = e.thumbw === undefined ? 0 : parseInt(e.thumbw);
+                e.tabh = e.tabh === undefined ? 0 : parseInt(e.tabh);
+                e.thumbh = e.thumbh === undefined ? 0 : parseInt(e.thumbh);
+                e.tabhide = e.tabhide === undefined ? 0 : parseInt(e.tabhide);
+                e.thumbhide = e.thumbhide === undefined ? 0 : parseInt(e.thumbhide);
+                e.mh = e.mh === undefined || e.mh == "" || e.mh === "auto" ? 0 : parseInt(e.mh, 0);
+                if (e.layout === "fullscreen" || e.l === "fullscreen")
+                    newh = Math.max(e.mh, window.RSIH);
+                else {
+                    e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+                    for (var i in e.rl) if (e.gw[i] === undefined || e.gw[i] === 0) e.gw[i] = e.gw[i - 1];
+                    e.gh = e.el === undefined || e.el === "" || (Array.isArray(e.el) && e.el.length == 0) ? e.gh : e.el;
+                    e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+                    for (var i in e.rl) if (e.gh[i] === undefined || e.gh[i] === 0) e.gh[i] = e.gh[i - 1];
+
+                    var nl = new Array(e.rl.length),
+                        ix = 0,
+                        sl;
+                    e.tabw = e.tabhide >= pw ? 0 : e.tabw;
+                    e.thumbw = e.thumbhide >= pw ? 0 : e.thumbw;
+                    e.tabh = e.tabhide >= pw ? 0 : e.tabh;
+                    e.thumbh = e.thumbhide >= pw ? 0 : e.thumbh;
+                    for (var i in e.rl) nl[i] = e.rl[i] < window.RSIW ? 0 : e.rl[i];
+                    sl = nl[0];
+                    for (var i in nl) if (sl > nl[i] && nl[i] > 0) { sl = nl[i]; ix = i; }
+                    var m = pw > (e.gw[ix] + e.tabw + e.thumbw) ? 1 : (pw - (e.tabw + e.thumbw)) / (e.gw[ix]);
+                    newh = (e.gh[ix] * m) + (e.tabh + e.thumbh);
+                }
+                if (window.rs_init_css === undefined) window.rs_init_css = document.head.appendChild(document.createElement("style"));
+                document.getElementById(e.c).height = newh + "px";
+                window.rs_init_css.innerHTML += "#" + e.c + "_wrapper { height: " + newh + "px }";
+            } catch (e) {
+                console.log("Failure at Presize of Slider:" + e)
+            }
+            //});
+        };</script>
+    <style type="text/css" data-type="vc_shortcodes-custom-css">
+        .vc_custom_1523944470161 {
+            background-image: url(https://assets3.thrillist.com/v1/image/2731198/size/tmg-facebook_social.jpg);
+            /* background-image: url(wp-content/uploads/sites/12/2018/04/top_screen87f1.jpg?id=14) !important; */
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+        }
+
+        .vc_custom_1523966657155 {
+            background-color: #f2f2f2 !important;
+        }
+
+        .vc_custom_1524048703255 {
+            padding-top: 110px !important;
+            padding-bottom: 81px !important;
+            background-image: url(https://crypterio.stylemixthemes.com/icoagency/wp-content/uploads/sites/12/2018/04/bg.jpg?id=3693) !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+        }
+
+        .vc_custom_1524198379903 {
+            margin-bottom: 0px !important;
+        }
+
+        .vc_custom_1524115129040 {
+            background-color: #f2f2f2 !important;
+        }
+
+        .vc_custom_1524122585541 {
+            background-image: url(https://crypterio.stylemixthemes.com/icoagency/wp-content/uploads/sites/12/2018/04/bg_2.jpg?id=3721) !important;
+        }
+
+        .vc_custom_1524208871238 {
+            background-image: url(https://crypterio.stylemixthemes.com/icoagency/wp-content/uploads/sites/12/2018/04/bg_2.jpg?id=3721) !important;
+        }
+
+        .vc_custom_1524458641595 {
+            margin-bottom: 0px !important;
+            padding-top: 96px !important;
+            padding-bottom: 80px !important;
+            background-image: url(https://crypterio.stylemixthemes.com/icoagency/wp-content/uploads/sites/12/2018/04/req_cb.jpg?id=3842) !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+        }
+
+        .vc_custom_1524462329433 {
+            padding-top: 55px !important;
+        }
+
+        .vc_custom_1523961820223 {
+            margin-bottom: 0px !important;
+        }
+
+        .vc_custom_1524475380548 {
+            margin-bottom: 30px !important;
+        }
+
+        .vc_custom_1524475390389 {
+            margin-bottom: 30px !important;
+        }
+
+        .vc_custom_1524475402549 {
+            margin-bottom: 30px !important;
+        }
+
+        .vc_custom_1524048410194 {
+            margin-bottom: 61px !important;
+        }
+
+        .vc_custom_1524111041277 {
+            margin-bottom: 0px !important;
+        }
+
+        .vc_custom_1524118219291 {
+            margin-bottom: 30px !important;
+        }
+
+        .vc_custom_1524118223228 {
+            margin-bottom: 30px !important;
+        }
+
+        .vc_custom_1524118227177 {
+            margin-bottom: 30px !important;
+        }
+
+        .vc_custom_1524118231081 {
+            margin-bottom: 30px !important;
+        }
+
+        .vc_custom_1524115321443 {
+            background-color: #f7f7f7 !important;
+        }
+
+        .vc_custom_1524117688993 {
+            background-color: #ffffff !important;
+        }
+
+        .vc_custom_1524118331558 {
+            background-color: #f7f7f7 !important;
+        }
+
+        .vc_custom_1524117785396 {
+            background-color: #ffffff !important;
+        }
+
+        .vc_custom_1524461461507 {
+            margin-bottom: -10px !important;
+        }
+
+        .vc_custom_1524459932322 {
+            margin-bottom: 20px !important;
+        }
+
+        .vc_custom_1524459331570 {
+            margin-top: 10px !important;
+        }
+    </style><noscript>
+        <style>
+            .wpb_animate_when_almost_visible {
+                opacity: 1;
+            }
+        </style>
+    </noscript> <!-- HEAD section Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    '../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-W2HGV67');</script>
+    <!-- End Google Tag Manager -->
+    <script async src='../cdn-cgi/bm/cv/669835187/api.js'></script>
+</head>
+
+<body
+    class="home page-template-default page page-id-2 site_ico_agency  header_style_1 header_transparent wpb-js-composer js-comp-ver-6.5.0 vc_responsive">
+    <!-- after opening Body Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2HGV67" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="wrapper">
+        <div id="fullpage" class="content_wrapper">
+
+            <header id="header">
+                <style type="text/css" id="styles-stm_hb_settings">
+                    @media (max-width:1023px) and (min-width:425px) {
+                        .stm-header__element.object502 {
+                            order: -2200
+                        }
+                    }
+
+                    @media (max-width:425px) {
+                        .stm-header__element.object502 {
+                            order: -2200
+                        }
+                    }
+
+           
+
+                    @media (max-width:1023px) and (min-width:425px) {
+                        .stm-header__element.object554 {
+                            order: -1200
+                        }
+                    }
+
+                    @media (max-width:425px) {
+                        .stm-header__element.object554 {
+                            order: -1200
+                        }
+                    }
+
+                   
+
+                    @media (max-width:1023px) and (min-width:425px) {
+                        .stm-header__element.object403 {
+                            order: -1100
+                        }
+                    }
+
+                    @media (max-width:425px) {
+                        .stm-header__element.object403 {
+                            order: -1100
+                        }
+                    }
+
+     
+
+                    @media (max-width:1023px) and (min-width:425px) {
+                        .stm-header__element.object450 {
+                            order: -1300
+                        }
+                    }
+
+                    @media (max-width:425px) {
+                        .stm-header__element.object450 {
+                            order: -1300
+                        }
+                    }
+
+
+
+                    .stm-header {
+                        background-image: url("wp-content/uploads/sites/12/2018/04/req_cb.jpg");
+                    }
+
+                    .stm-header:before {
+                        background-color: rgba(6, 38, 64, 0.4);
+                    }
+
+                    .stm-header__row_color_top {
+                        padding-top: 38px;
+                        padding-bottom: 30px;
+                        color: #ffffff;
+                    }
+
+                    .stm-header__row_color_top .stm-icontext__text {
+                        color: #ffffff;
+                    }
+
+                    .stm-header__row_color_top a {
+                        color: #ffffff;
+                    }
+
+                    .stm-header__row_color_top .dropdown-toggle {
+                        color: #ffffff !important;
+                    }
+
+                    .stm-header__row_color_top a:hover,
+                    .stm-navigation__default>ul>li>a:hover {
+                        color: #2cd9a2 !important;
+                    }
+
+                    .stm-header__row_color_top li:hover a {
+                        color: #2cd9a2;
+                    }
+
+                    .stm-header__row_color_top .stm-switcher__trigger_default:after {
+                        border-top-color: #ffffff;
+                    }
+
+                    .stm-header__row_color_top .dropdown-toggle:after {
+                        border-top-color: #ffffff !important;
+                    }
+
+
+
+                    .stm-header__row_color_center {
+                        padding-top: 30px;
+                    }
+
+
+
+                    .stm_hb_mtc,
+                    .stm_hb_mtc_h:hover,
+                    .stm_hb_mtc_b:before,
+                    .stm_hb_mtc_b_h:hover:before,
+                    .stm_hb_mtc_a:after,
+                    .stm_hb_mtc_a_h:hover:after,
+                    .stm_hb_mtc_a_h.active,
+                    .mini-cart {
+                        color: #2cd9a2 !important
+                    }
+
+                    .stm_hb_stc,
+                    .stm_hb_stc_h:hover,
+                    .stm_hb_stc_a:after,
+                    .stm_hb_stc_a_h:hover:after,
+                    .stm_hb_stc_b:before,
+                    .stm_hb_stc_b_h:hover:before {
+                        color: #062640 !important
+                    }
+
+                    .stm_hb_ttc,
+                    .stm_hb_ttc_h:hover,
+                    .stm_hb_ttc_a:after,
+                    .stm_hb_ttc_a_h:hover:after,
+                    .stm_hb_ttc_b:before,
+                    .stm_hb_ttc_b_h:hover:before {
+                        color: #2cd9a2 !important
+                    }
+
+                    .stm_hb_mbc,
+                    .stm_hb_mbc_h:hover,
+                    .stm_hb_mbc_b:before,
+                    .stm_hb_mbc_b_h:hover:before,
+                    .stm_hb_mbc_a:after,
+                    .stm_hb_mbc_a_h:hover:after,
+                    .stm_hb_mbc_h.active,
+                    .stm-search .stm_widget_search button[type=submit] {
+                        background-color: #2cd9a2 !important
+                    }
+
+                    .stm_hb_sbc,
+                    .stm_hb_sbc_h:hover,
+                    .stm_hb_sbc_a:after,
+                    .stm_hb_sbc_a_h:hover:after,
+                    .stm_hb_sbc_b:before,
+                    .stm_hb_sbc_b_h:hover:before {
+                        background-color: #062640 !important
+                    }
+
+                    .stm_hb_tbc,
+                    .stm_hb_tbc_h:hover,
+                    .stm_hb_tbc_h.active,
+                    .stm_hb_tbc_a:after,
+                    .stm_hb_tbc_a_h:hover:after,
+                    .stm_hb_tbc_b:before,
+                    .stm_hb_tbc_b_h:hover:before {
+                        background-color: #2cd9a2 !important
+                    }
+
+                    .stm_hb_mbdc,
+                    .stm_hb_mbdc_h:hover,
+                    .stm_hb_mbdc_b:before,
+                    .stm_hb_mbdc_b_h:hover:before,
+                    .stm_hb_mbdc_a:after,
+                    .stm_hb_mbdc_a_h:hover:after,
+                    .stm-search .stm_widget_search .form-control:focus {
+                        border-color: #2cd9a2 !important
+                    }
+
+                    .stm_hb_sbdc,
+                    .stm_hb_sbdc_h:hover,
+                    .stm_hb_sbdc_a:after,
+                    .stm_hb_sbdc_a_h:hover:after,
+                    .stm_hb_sbdc_b:before,
+                    .stm_hb_sbdc_b_h:hover:before {
+                        border-color: #062640 !important
+                    }
+
+                    .stm_hb_tbdc,
+                    .stm_hb_tbdc_h:hover,
+                    .stm_hb_tbdc_a:after,
+                    .stm_hb_tbdc_a_h:hover:after,
+                    .stm_hb_tbdc_b:before,
+                    .stm_hb_tbdc_b_h:hover:before {
+                        border-color: #2cd9a2 !important
+                    }
+                </style>
+                <script type="text/javascript">
+                    var stm_sticky = '';
+                </script>
+
+                <div class="stm-header stm-header__hb" id="stm_stm_hb_settings">
+
+                    <div class="stm-header__row_color stm-header__row_color_top elements_in_row_3">
+                        <div class="container">
+                            <div class="stm-header__row stm-header__row_top">
+
+                                <div class="stm-header__cell stm-header__cell_center">
+                                    <div class="stm-header__element object554 stm-header__element_">
+
+                                        <a href="index.html">
+                                            <div class="stm-logo">
+                                                <img src="wp-content/themes/crypterio/assets/images/bg/header-logo.png"
+                                                    class="img-fluid" style="width: 15rem;">
+                                                <!-- <h1 style="color: white;">Universal USD</h1> -->
+                                            </div>
+                                        </a>
+                                 
+
+                                    </div>
+                                </div>
+                                <div class="stm-header__cell stm-header__cell_right">
+                                    <div class="stm-header__element object450 stm-header__element_icon_only">
+
+                                        <div class="stm-socials">
+                                            <a href="#" class="stm-socials__icon icon_16px stm-socials__icon_icon_only"
+                                                target="_blank" title="Social item">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                            <a href="#" class="stm-socials__icon icon_16px stm-socials__icon_icon_only"
+                                                target="_blank" title="Social item">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                            <a href="#" class="stm-socials__icon icon_16px stm-socials__icon_icon_only"
+                                                target="_blank" title="Social item">
+                                                <i class="fa fa-vk"></i>
+                                            </a>
+                                            <a href="#" class="stm-socials__icon icon_16px stm-socials__icon_icon_only"
+                                                target="_blank" title="Social item">
+                                                <i class="fa fa-pinterest"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stm-header__row_color stm-header__row_color_center elements_in_row_1">
+                        <div class="container">
+                            <div class="stm-header__row stm-header__row_center">
+                                <div class="stm-header__cell stm-header__cell_center">
+                                    <div class="stm-header__element object502 stm-header__element_default">
+
+
+                                        <div
+                                            class="stm-navigation heading_font stm-navigation__default stm-navigation__default stm-navigation__none stm-navigation__ main_menu_nav">
+
+                                            <ul>
+                                                <li id="menu-item-3946"
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3946">
+                                                    <a href="#" data-wpel-link="internal">Home</a>
+                                                </li>
+                                                <li id="menu-item-3932"
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3932">
+                                                    <a href="#" data-wpel-link="internal">Why Use Universal USD?</a>
+                                                </li>
+                                                <li id="menu-item-3960"
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3960">
+                                                    <a href="#" data-wpel-link="internal">Resources</a>
+                                                </li>
+                                                <li id="menu-item-3950"
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3950">
+                                                    <a href="#" data-wpel-link="internal">Universal USD Gold</a>
+                                                </li>
+                                                <li id="menu-item-3904"
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3904">
+                                                    <a href="pairs.html" data-wpel-link="internal">Pairs</a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="stm-header__overlay"></div>
+
+                <div class="stm_mobile__header">
+                    <div class="container">
+                        <div class="stm_flex stm_flex_center stm_flex_last stm_flex_nowrap">
+                            <div class="stm_mobile__logo">
+                                <a href="index.html" title="Home" data-wpel-link="internal">
+                                    <img src="wp-content/themes/crypterio/assets/images/bg/header-logo.png"
+                                    class="img-fluid" style="width: 15rem;">
+                                </a>
+                            </div>
+                            <div class="stm_mobile__switcher stm_flex_last js_trigger__click"
+                                data-element=".stm-header, .stm-header__overlay" data-toggle="false">
+                                <span class="stm_hb_mbc"></span>
+                                <span class="stm_hb_mbc"></span>
+                                <span class="stm_hb_mbc"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div id="main">
+                <div class="container">
+
+                    <div class="content-area">
+
+                        <article id="post-2" class="post-2 page type-page status-publish hentry">
+
+                            <div class="entry-content">
+                                <section data-vc-full-width="true" data-vc-full-width-init="false"
+                                    class="vc_section vc_custom_1523944470161 vc_section-has-fill"
+                                    style="height: 1005px;">
+                                    <ul class="wrapper">
+                                   
+                                        <div class="earth">
+                                            <div class="vc_custom_heading text_align_left has_icon ">
+                                                <div class="icon"
+                                                    style="font-size: 72px; line-height: 72px;"><i
+                                                        class="stm-ia_clock"></i></div>
+                                                <h1
+                                                    style="color: #ffffff;line-height: 60px;text-align: left; text-transform:capitalize ">
+                                                    Digital money
+                                                    for a digital age</p>
+                                                    <small><mark>Global, fast, and secure</mark></small>
+                                                </h1>
+                                            </div>
+                                            <div class="planet"></div>
+                          
+                                        </div>
+                                    </ul>
+
+
+                                    <div class="vc_row wpb_row vc_row-fluid" style=&quot;&quot;>
+
+                                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper start-main-div">
+                                                    <div class="stm-spacing" id="stm-spacing-60f93e936065a"></div>
+                                                    <script>
+                                                        (function ($) {
+                                                            "use strict";
+                                                            var spacingID = 'stm-spacing-60f93e936065a',
+                                                                lgSpacing = '330',
+                                                                mdSpacing = '330',
+                                                                smSpacing = '150',
+                                                                xsSpacing = '100';
+
+                                                            function stmSpacing() {
+                                                                if (window.matchMedia("(min-width: 1200px)").matches && lgSpacing) {
+                                                                    $('#' + spacingID).css("height", lgSpacing);
+                                                                } else if (window.matchMedia("(max-width: 1199px) and (min-width: 992px )").matches && mdSpacing) {
+                                                                    $('#' + spacingID).css("height", mdSpacing);
+                                                                } else if (window.matchMedia("(max-width: 991px) and (min-width: 768px )").matches && smSpacing) {
+                                                                    $('#' + spacingID).css("height", smSpacing);
+                                                                } else if (window.matchMedia("(max-width: 767px)").matches && xsSpacing) {
+                                                                    $('#' + spacingID).css("height", xsSpacing);
+                                                                } else {
+                                                                    $('#' + spacingID).css("height", "");
+                                                                }
+                                                            }
+
+                                                            $(document).ready(function () {
+                                                                stmSpacing();
+                                                            });
+
+                                                            $(window).resize(function () {
+                                                                stmSpacing();
+                                                            });
+
+                                                        })(jQuery);
+                                                    </script>
+
+                                                    <div class="stm_animation stm_viewport" 
+                                                        data-animate="fadeInUp" data-animation-delay="0"
+                                                        data-animation-duration="3" data-viewport_position="90">
+                                              
+                                                    </div>
+                                                    <div class="stm-spacing" id="stm-spacing-60f93e936169b"></div>
+                                                    <script>
+                                                        (function ($) {
+                                                            "use strict";
+                                                            var spacingID = 'stm-spacing-60f93e936169b',
+                                                                lgSpacing = '140',
+                                                                mdSpacing = '100',
+                                                                smSpacing = '100',
+                                                                xsSpacing = '50';
+
+                                                            function stmSpacing() {
+                                                                if (window.matchMedia("(min-width: 1200px)").matches && lgSpacing) {
+                                                                    $('#' + spacingID).css("height", lgSpacing);
+                                                                } else if (window.matchMedia("(max-width: 1199px) and (min-width: 992px )").matches && mdSpacing) {
+                                                                    $('#' + spacingID).css("height", mdSpacing);
+                                                                } else if (window.matchMedia("(max-width: 991px) and (min-width: 768px )").matches && smSpacing) {
+                                                                    $('#' + spacingID).css("height", smSpacing);
+                                                                } else if (window.matchMedia("(max-width: 767px)").matches && xsSpacing) {
+                                                                    $('#' + spacingID).css("height", xsSpacing);
+                                                                } else {
+                                                                    $('#' + spacingID).css("height", "");
+                                                                }
+                                                            }
+
+                                                            $(document).ready(function () {
+                                                                stmSpacing();
+                                                            });
+
+                                                            $(window).resize(function () {
+                                                                stmSpacing();
+                                                            });
+
+                                                        })(jQuery);
+                                                    </script>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <div class="vc_row-full-width vc_clearfix"></div>
+                                <section data-vc-full-width="true" data-vc-full-width-init="false"
+                                    class="vc_section vc_custom_1523966657155 vc_section-has-fill">
+                                    <div class="vc_row wpb_row vc_row-fluid" style=&quot;&quot;>
+
+                                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="stm-spacing" id="stm-spacing-60f93e936f5e3"></div>
+                                                    <script>
+                                                        (function ($) {
+                                                            "use strict";
+                                                            var spacingID = 'stm-spacing-60f93e936f5e3',
+                                                                lgSpacing = '100',
+                                                                mdSpacing = '70',
+                                                                smSpacing = '50',
+                                                                xsSpacing = '40';
+
+                                                            function stmSpacing() {
+                                                                if (window.matchMedia("(min-width: 1200px)").matches && lgSpacing) {
+                                                                    $('#' + spacingID).css("height", lgSpacing);
+                                                                } else if (window.matchMedia("(max-width: 1199px) and (min-width: 992px )").matches && mdSpacing) {
+                                                                    $('#' + spacingID).css("height", mdSpacing);
+                                                                } else if (window.matchMedia("(max-width: 991px) and (min-width: 768px )").matches && smSpacing) {
+                                                                    $('#' + spacingID).css("height", smSpacing);
+                                                                } else if (window.matchMedia("(max-width: 767px)").matches && xsSpacing) {
+                                                                    $('#' + spacingID).css("height", xsSpacing);
+                                                                } else {
+                                                                    $('#' + spacingID).css("height", "");
+                                                                }
+                                                            }
+
+                                                            $(document).ready(function () {
+                                                                stmSpacing();
+                                                            });
+
+                                                            $(window).resize(function () {
+                                                                stmSpacing();
+                                                            });
+
+                                                        })(jQuery);
+                                                    </script>
+
+                                                    <div class="vc_custom_heading text_align_center stripe_bottom">
+                                                        <h2 style="text-align: center">NEWS</h2>
+                                                    </div>
+                                                    <div class="stm-spacing" id="stm-spacing-60f93e93717a6"></div>
+
+
+
+                                                    <div class="stm_services_grid stm_services_grid60f93e9371e01 ">
+
+                                                        <div
+                                                            style="text-align: center;font-size: 22px; font-weight: 400; margin-bottom: 100px;">
+                                                            <p>Assurance Opinion Confirms Universal USD’s Reserves Fully Backed
+                                                                | <a href="#">Read More</a> </p>
+                                                            <p>Universal USD and Bitfinex reach settlement with New York
+                                                                Attorney General’s Office | <a href="#">Read More</a>
+                                                            </p>
+                                                            <p>Universal USD (USDt) to Launch on Solana | <a href="#">Read
+                                                                    More</a></p>
+                                                            <p>Universal USD Gold (XAU₮) Launch Meets Growing Demand for
+                                                                Digital Exposure to World’s Most Enduring Asset | Read
+                                                                More</p>
+                                                            <p>Universal USD Now Supports Offshore Chinese Yuan (CNH), Launches
+                                                                CNH₮ Stablecoin | <a href="#">Read More</a></p>
+                                                            <p>Universal USD Pledges $1M in Support for Hurricane Dorian Relief
+                                                                | <a href="#">Read More</a></p>
+                                                            <p>Universal USD Confirms Receipt of Prepayment on Loan Facility
+                                                                From Bitfinex | <a href="#">Read More</a></p>
+                                                            <p>Universal USD Banking Relationship Announced | <a href="#">Read
+                                                                    More</a></p>
+                                                            <p>Universal USD reopens account verification and direct redemption
+                                                                | <a href="#">Read More</a></p>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <div class="vc_row-full-width vc_clearfix"></div>
+                                <div data-vc-full-width="true" data-vc-full-width-init="false"
+                                    class="vc_row wpb_row vc_row-fluid overlay fixed_bg vc_custom_1524048703255 vc_row-has-fill"
+                                    style=&quot;&quot;>
+
+                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="vc_column-inner ">
+                                            <div class="wpb_wrapper">
+                                                <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                                        <div class="vc_column-inner">
+                                                            <div class="wpb_wrapper">
+                                                                <div class="stm_animation stm_viewport" 
+                                                                    data-animate="fadeInUp" data-animation-delay="0"
+                                                                    data-animation-duration="1"
+                                                                    data-viewport_position="90">
+                                                                    <div
+                                                                        class="vc_custom_heading no_stripe vc_custom_1524048410194 text_align_left has_icon">
+                                                                        <div class="icon"
+                                                                            style="font-size: 67px; line-height: 67px;">
+                                                                            <i class="stm-check"></i>
+                                                                        </div>
+                                                                        <h4
+                                                                            style="font-size: 45px;color: #ffffff;line-height: 45px;text-align: left">
+                                                                            <mark>A Digital Token.</mark><br />Backed by
+                                                                            Physical Gold
+                                                                        </h4>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vc_row-full-width vc_clearfix"></div>
+
+                                <div data-vc-full-width="true" data-vc-full-width-init="false"
+                                    class="vc_row wpb_row vc_row-fluid secondary_bg_color vc_custom_1524198379903"
+                                    style=&quot;&quot;>
+
+                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="vc_column-inner ">
+                                            <div class="wpb_wrapper">
+
+
+                                                <div class="stm_particles_bg_main" id="stm_particles_bg-8489"></div>
+
+                                                <style>
+                                                    #stm_particles_bg-8489 {
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        right: 0;
+                                                        bottom: 0;
+                                                        min-width: 3000px;
+                                                    }
+
+                                                    .vc_cta3_content-container {
+                                                        position: relative;
+                                                    }
+                                                </style>
+
+                                                <script type="text/javascript">
+                                                    (function ($) {
+                                                        $(window).load(function () {
+                                                            var screenWidth = $(window).width();
+                                                            if (screenWidth < 1140) {
+                                                                var defaultWidth = screenWidth;
+                                                            } else {
+                                                                var defaultWidth = 1140;
+                                                            }
+                                                            var marginLeft = (screenWidth - defaultWidth) / 2;
+
+                                                            $('#stm_particles_bg-8489').css({
+                                                                'width': screenWidth + 'px',
+                                                                'margin-left': '-' + marginLeft + 'px'
+                                                            });
+
+                                                            particlesJS('stm_particles_bg-8489',
+
+                                                                {
+                                                                    "particles": {
+                                                                        "number": {
+                                                                            "value": 100,
+                                                                            "density": {
+                                                                                "enable": true,
+                                                                                "value_area": 800
+                                                                            }
+                                                                        },
+                                                                        "color": {
+                                                                            "value": "#ffffff"
+                                                                        },
+                                                                        "opacity": {
+                                                                            "value": 0.1,
+                                                                            "random": false,
+                                                                            "anim": {
+                                                                                "enable": false,
+                                                                                "speed": 1,
+                                                                                "opacity_min": 0.1,
+                                                                                "sync": false
+                                                                            }
+                                                                        },
+                                                                        "size": {
+                                                                            "value": 4,
+                                                                            "random": true,
+                                                                            "anim": {
+                                                                                "enable": false,
+                                                                                "speed": 40,
+                                                                                "size_min": 0.1,
+                                                                                "sync": false
+                                                                            }
+                                                                        },
+                                                                        "line_linked": {
+                                                                            "enable": true,
+                                                                            "distance": 150,
+                                                                            "color": "#fff",
+                                                                            "opacity": 0.1,
+                                                                            "width": 1
+                                                                        },
+                                                                        "move": {
+                                                                            "enable": true,
+                                                                            "speed": 3,
+                                                                            "direction": "none",
+                                                                            "random": false,
+                                                                            "straight": false,
+                                                                            "out_mode": "out",
+                                                                            "attract": {
+                                                                                "enable": false,
+                                                                                "rotateX": 600,
+                                                                                "rotateY": 1200
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "interactivity": {
+                                                                        "detect_on": "canvas",
+                                                                        "events": {
+                                                                            "onhover": {
+                                                                                "enable": false,
+                                                                                "mode": "grab"
+                                                                            },
+                                                                            "onclick": {
+                                                                                "enable": false,
+                                                                                "mode": "push"
+                                                                            },
+                                                                            "resize": true
+                                                                        }
+                                                                    },
+                                                                    "retina_detect": true
+                                                                }
+                                                            );
+                                                        });
+                                                    })(jQuery);
+                                                </script>
+                                                <section class="vc_cta3-container">
+                                                    <div
+                                                        class="vc_general vc_cta3 secondary_bg_color vc_cta3-style-flat vc_cta3-shape-square vc_cta3-align-left vc_cta3-color-classic vc_cta3-icon-size-md vc_cta3-actions-right vc_custom_1524111041277">
+                                                        <div class="vc_cta3_content-container">
+                                                            <div class="vc_cta3-content">
+                                                                <header class="vc_cta3-content-header">
+                                                                    <div class="vc_custom_heading">
+                                                                        <h2
+                                                                            style="font-size: 20px;color: #000000;line-height: 24px;;">Transparency update</h2>
+                                                                    </div>
+                                                                </header>
+                                                            </div>
+                                                            <div class="vc_cta3-actions">
+                                                                <style type="text/css">
+
+                                                                </style>
+                                                                <div class="vc_btn3-container vc_btn3-right">
+                                                                    <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-flat vc_btn3-60f93e93d5c22 vc_btn3-block vc_btn3-icon-right vc_btn3-color-theme_style_2"
+                                                                        href="#" title="" data-wpel-link="external"
+                                                                        rel="nofollow external noopener noreferrer">Proof of Funds<i class="vc_btn3-icon fa fa-chevron-right"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vc_row-full-width vc_clearfix"></div>
+                                <section data-vc-full-width="true" data-vc-full-width-init="false"
+                                    class="vc_section vc_custom_1524115129040 vc_section-has-fill">
+                                    <div class="vc_row wpb_row vc_row-fluid" style=&quot;&quot;>
+
+                                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="stm-spacing" id="stm-spacing-60f93e93d72a0"></div>
+                                                    <script>
+                                                        (function ($) {
+                                                            "use strict";
+                                                            var spacingID = 'stm-spacing-60f93e93d72a0',
+                                                                lgSpacing = '100',
+                                                                mdSpacing = '70',
+                                                                smSpacing = '50',
+                                                                xsSpacing = '40';
+
+                                                            function stmSpacing() {
+                                                                if (window.matchMedia("(min-width: 1200px)").matches && lgSpacing) {
+                                                                    $('#' + spacingID).css("height", lgSpacing);
+                                                                } else if (window.matchMedia("(max-width: 1199px) and (min-width: 992px )").matches && mdSpacing) {
+                                                                    $('#' + spacingID).css("height", mdSpacing);
+                                                                } else if (window.matchMedia("(max-width: 991px) and (min-width: 768px )").matches && smSpacing) {
+                                                                    $('#' + spacingID).css("height", smSpacing);
+                                                                } else if (window.matchMedia("(max-width: 767px)").matches && xsSpacing) {
+                                                                    $('#' + spacingID).css("height", xsSpacing);
+                                                                } else {
+                                                                    $('#' + spacingID).css("height", "");
+                                                                }
+                                                            }
+
+                                                            $(document).ready(function () {
+                                                                stmSpacing();
+                                                            });
+
+                                                            $(window).resize(function () {
+                                                                stmSpacing();
+                                                            });
+
+                                                        })(jQuery);
+                                                    </script>
+
+                                                    <div class="vc_custom_heading text_align_center stripe_bottom">
+                                                        <h1 style="text-align: center">We’ve combined the best of both
+                                                            worlds</h2>
+                                                            <h4 style="text-align: center">Get the joint benefits of
+                                                                open blockchain technology and traditional currency</h4>
+                                                    </div>
+
+
+                                                    <div class="staff_list advisors" style="margin-top: 100px;">
+                                                        <ul>
+
+                                                            <li class="stm_animation stm_viewport"
+                                                                data-animate="fadeInUp" data-animation-delay="0"
+                                                                data-animation-duration="1" data-viewport_position="90"
+                                                                style="opacity:1;-webkit-transition-delay: 0s; -moz-transition-delay: 0s; transition-delay: 0s;">
+                                                                <div class="inner_box animated fadeInUp"
+                                                                    style="opacity:1;-webkit-animation-delay:0s; -webkit-animation-duration:1s; -moz-animation-delay:0s; -moz-animation-duration:1s; animation-delay:0s;">
+
+
+                                                                    <div class="inner">
+                                                                        <h4 class="no_stripe">
+                                                                            Stable Currency
+                                                                        </h4>
+                                                                        <div class="">
+                                                                            <div class="">
+                                                                                <p>Universal USD converts cash into digital
+                                                                                    currency, to anchor or Universal USD the
+                                                                                    value to the price of national
+                                                                                    currencies like the US dollar, the
+                                                                                    Euro, and the offshore Chinese yuan.
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+
+
+
+                                                                        <div class="stm_staff__hover">
+                                                                            <div class="title">
+                                                                                Stable Currency
+                                                                            </div>
+
+                                                                            <div class="stm_excerpt">
+                                                                                <p>Universal USD converts cash into digital
+                                                                                    currency, to anchor or Universal USD the
+                                                                                    value to the price of national
+                                                                                    currencies like the US dollar, the
+                                                                                    Euro, and the offshore Chinese yuan.
+                                                                                </p>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </li>
+                                                            <li class="stm_animation stm_viewport"
+                                                                data-animate="fadeInUp" data-animation-delay="0"
+                                                                data-animation-duration="1" data-viewport_position="90"
+                                                                style="opacity:1;-webkit-transition-delay: 0s; -moz-transition-delay: 0s; transition-delay: 0s;">
+                                                                <div class="inner_box animated fadeInUp"
+                                                                    style="opacity:1;-webkit-animation-delay:0s;-webkit-animation-duration:1s; -moz-animation-delay:0s;-moz-animation-duration:1s; animation-delay:0s;">
+
+
+                                                                    <div class="inner">
+                                                                        <h4 class="no_stripe">
+                                                                            100% Backed
+                                                                        </h4>
+                                                                        <div class="stm_invis">
+                                                                            <div class="stm_excerpt">
+                                                                                <p>Every Universal USD token is always 100%
+                                                                                    backed by our reserves, which
+                                                                                    include traditional currency and
+                                                                                    cash equivalents and, from time to
+                                                                                    time, may include other assets and
+                                                                                    receivables from loans made by
+                                                                                    Universal USD to third parties, which may
+                                                                                    include affiliated entities
+                                                                                    (collectively, “reserves”). Every
+                                                                                    Universal USD token is also 1-to-1 pegged
+                                                                                    to the dollar, so 1 USD₮ Token is
+                                                                                    always valued by Universal USD at 1 USD.
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="stm_staff__hover">
+                                                                            <div class="title">
+                                                                                100% Backed
+                                                                            </div>
+                                                                            <div class="stm_excerpt">
+                                                                                <p>Every Universal USD token is always 100%
+                                                                                    backed by our reserves, which
+                                                                                    include traditional currency and
+                                                                                    cash equivalents and, from time to
+                                                                                    time, may include other assets and
+                                                                                    receivables from loans made by
+                                                                                    Universal USD to third parties, which may
+                                                                                    include affiliated entities
+                                                                                    (collectively, “reserves”). Every
+                                                                                    Universal USD token is also 1-to-1 pegged
+                                                                                    to the dollar, so 1 USD₮ Token is
+                                                                                    always valued by Universal USD at 1 USD.
+                                                                                </p>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </li>
+                                                            <li class="stm_animation stm_viewport"
+                                                                data-animate="fadeInUp" data-animation-delay="0"
+                                                                data-animation-duration="1" data-viewport_position="90"
+                                                                style="opacity:1;-webkit-transition-delay: 0s; -moz-transition-delay: 0s; transition-delay: 0s;">
+                                                                <div class="inner_box animated fadeInUp"
+                                                                    style="opacity:1;-webkit-animation-delay:0s;-webkit-animation-duration:1s; -moz-animation-delay:0s;-moz-animation-duration:1s; animation-delay:0s;">
+
+                                                                    <div class="inner">
+                                                                        <h4 class="no_stripe">
+                                                                            Transparent
+                                                                        </h4>
+                                                                        <div class="stm_invis">
+                                                                            <div class="stm_excerpt">
+                                                                                <p>The value of our reserves is
+                                                                                    published daily. The value of our
+                                                                                    reserves matches or exceeds the
+                                                                                    value of all tethers in circulation.
+                                                                                </p>
+                                                                            </div>
+
+                                                                        </div>
+
+
+
+                                                                        <div class="stm_staff__hover">
+                                                                            <div class="title">
+                                                                                Transparent
+                                                                            </div>
+                                                                            <div class="stm_excerpt">
+                                                                                <p>The value of our reserves is
+                                                                                    published daily. The value of our
+                                                                                    reserves matches or exceeds the
+                                                                                    value of all tethers in circulation.
+                                                                                </p>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </li>
+                                                            <li class="stm_animation stm_viewport"
+                                                                data-animate="fadeInUp" data-animation-delay="0"
+                                                                data-animation-duration="1" data-viewport_position="90"
+                                                                style="opacity:1;-webkit-transition-delay: 0s; -moz-transition-delay: 0s; transition-delay: 0s;">
+                                                                <div class="inner_box animated fadeInUp"
+                                                                    style="opacity:1;-webkit-animation-delay:0s;-webkit-animation-duration:1s; -moz-animation-delay:0s;-moz-animation-duration:1s; animation-delay:0s;">
+
+
+                                                                    <div class="inner">
+                                                                        <h4 class="no_stripe">
+                                                                            Blockchain Technology
+                                                                        </h4>
+                                                                        <div class="stm_invis">
+                                                                            <div class="stm_excerpt">
+                                                                                <p>The Universal USD platform is built on top
+                                                                                    of open blockchain technologies,
+                                                                                    leveraging the security and
+                                                                                    transparency that they provide.</p>
+                                                                            </div>
+
+                                                                        </div>
+
+
+
+                                                                        <div class="stm_staff__hover">
+                                                                            <div class="title">
+                                                                                Blockchain Technology
+                                                                            </div>
+                                                                            <div class="stm_excerpt">
+                                                                                <p>The Universal USD platform is built on top
+                                                                                    of open blockchain technologies,
+                                                                                    leveraging the security and
+                                                                                    transparency that they provide.</p>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </li>
+                                                            <li class="stm_animation stm_viewport"
+                                                                data-animate="fadeInUp" data-animation-delay="0"
+                                                                data-animation-duration="1" data-viewport_position="90"
+                                                                style="opacity:1;-webkit-transition-delay: 0s; -moz-transition-delay: 0s; transition-delay: 0s;">
+                                                                <div class="inner_box animated fadeInUp"
+                                                                    style="opacity:1;-webkit-animation-delay:0s;-webkit-animation-duration:1s; -moz-animation-delay:0s;-moz-animation-duration:1s; animation-delay:0s;">
+
+                                                                    <div class="inner">
+                                                                        <h4 class="no_stripe">
+                                                                            Widespread Integration
+                                                                        </h4>
+                                                                        <div class="stm_invis">
+                                                                            <div class="stm_excerpt">
+                                                                                <p>Universal USD is the most widely integrated
+                                                                                    digital-to- fiat currency today.
+                                                                                    Buy, sell, and use Universal USD tokens at
+                                                                                    Bitfinex and other major exchanges
+                                                                                    and service providers.</p>
+                                                                            </div>
+
+                                                                        </div>
+
+
+
+                                                                        <div class="stm_staff__hover">
+                                                                            <div class="title">
+                                                                                Widespread Integration
+                                                                            </div>
+                                                                            <div class="stm_excerpt">
+                                                                                <p>Universal USD is the most widely integrated
+                                                                                    digital-to- fiat currency today.
+                                                                                    Buy, sell, and use Universal USD tokens at
+                                                                                    Bitfinex and other major exchanges
+                                                                                    and service providers.</p>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </li>
+                                                            <li class="stm_animation stm_viewport"
+                                                                data-animate="fadeInUp" data-animation-delay="0"
+                                                                data-animation-duration="1" data-viewport_position="90"
+                                                                style="opacity:1;-webkit-transition-delay: 0s; -moz-transition-delay: 0s; transition-delay: 0s;">
+                                                                <div class="inner_box animated fadeInUp"
+                                                                    style="opacity:1;-webkit-animation-delay:0s;-webkit-animation-duration:1s; -moz-animation-delay:0s;-moz-animation-duration:1s; animation-delay:0s;">
+
+
+                                                                    <div class="inner">
+                                                                        <h4 class="no_stripe">
+                                                                            Secure
+                                                                        </h4>
+                                                                        <div class="stm_invis">
+                                                                            <div class="stm_excerpt">
+                                                                                <p>Universal USD’s blockchain-enabled
+                                                                                    technology delivers world-class
+                                                                                    security while meeting international
+                                                                                    compliance standards and
+                                                                                    regulations.</p>
+                                                                            </div>
+
+                                                                        </div>
+
+
+
+                                                                        <div class="stm_staff__hover">
+                                                                            <div class="title">Secure</div>
+                                                                            <div class="stm_excerpt">
+                                                                                <p>Universal USD’s blockchain-enabled
+                                                                                    technology delivers world-class
+                                                                                    security while meeting international
+                                                                                    compliance standards and
+                                                                                    regulations.</p>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </li>
+
+                                                        </ul>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </section>
+                                <div class="vc_row-full-width vc_clearfix"></div>
+
+                                <section data-vc-full-width="true" data-vc-full-width-init="false"
+                                    class="vc_section bg_bottom vc_custom_1524208871238 vc_section-has-fill">
+                                    <div style="color: white;">
+
+                                        <!-- <h1 style="color: white; display: flex;
+                                        justify-content: center;">
+                                     
+                                                <p>Money built for the internet</p>
+                                         
+                                        </h1>
+                                        <h4 style="color: white; display: flex;
+                                        justify-content: center;">
+                                      
+                                                <p>Whatever you can do with digital currencies, you can now do with
+                                                    digital cash.</p>
+                                          
+                                        </h4> -->
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-12" >
+                                                    <h1 style="color: white; display: flex;
+                                                    justify-content: center;">
+                                                        Money built for the internet
+                                                    </h1>
+                                                    <h4 style="color: white; display: flex;
+                                                    justify-content: center;">
+                                                        Whatever you can do with digital currencies, you can now do with
+                                                    digital cash.
+                                                    </h4>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+
+                                      
+
+                                        <div>
+                                            <div class="wpb_column vc_column_container vc_col-sm-4">
+
+
+                                                <div style="display: flex; justify-content: center; color: white;">
+                                                    <div class="mk-box-icon-2-image" style="width:64px;"> <img
+                                                            src="https://tether.to/wp-content/uploads/2014/07/Icon_Exchanges.svg"
+                                                            alt="Blockchain Companies"> </div>
+                                                    <h3 style="color: white;">Blockchain Companies</h3>
+                                                    <p class="mk-box-icon-2-content"></p>
+                                                </div>
+
+
+
+                                                <ul style="list-style-type: circle;">
+                                                    <li style="list-style-type: circle;"><p>
+                                                            Offer your services in a variety of digital
+                                                        currencies
+                                                        </p></li>
+                                                    <li><p>
+                                                        Price goods and services in a currency your
+                                                        customers are familiar with
+                                                    </p></li>
+                                                    <li><p>
+                                                        Reduce operating costs and times by bypassing
+                                                        financial institutions
+                                                    </p></li>
+                                                </ul>
+
+
+
+
+                                            </div>
+
+
+                                            <div class="wpb_column vc_column_container vc_col-sm-4">
+
+
+                                                <div style="display: flex; justify-content: center; color: white;">
+                                                    <div class="mk-box-icon-2-image" style="width:64px;"> <img
+                                                            src="https://tether.to/wp-content/uploads/2014/07/Icon_Exchanges.svg"
+                                                            alt="Blockchain Companies"> </div>
+                                                    <h3 style="color: white;">Exchanges</h3>
+                                                    <p class="mk-box-icon-2-content"></p>
+                                                </div>
+
+
+
+                                                <ul style="list-style-type: circle; margin-bottom: 90px;">
+                                                    <li><p>
+                                                        Use Universal USD tokens as an alternative to traditional
+                                                        currency deposit and withdrawal methods
+                                                    </p></li>
+                                                    <li><p>
+                                                        Secure and manage customer assets purely through
+                                                        crypto-processes, including multi-sig
+                                                    </p></li>
+                                                    <li><p>
+                                                        Settle fiat balances between exchanges much easier and in
+                                                        real-time
+                                                    </p></li>
+                                                </ul>
+
+
+
+
+                                            </div>
+
+                                            <!-- end part -->
+                                            <div class="wpb_column vc_column_container vc_col-sm-4">
+
+
+                                                <div style="display: flex; justify-content: center; color: white;">
+                                                    <div class="mk-box-icon-2-image" style="width:64px;"> <img
+                                                            src="https://tether.to/wp-content/uploads/2014/07/Icon_Individuals.svg"
+                                                            alt="Blockchain Companies"> </div>
+                                                    <h3 style="color: white;">Individuals/Traders</h3>
+                                                    <p class="mk-box-icon-2-content"></p>
+                                                </div>
+
+
+
+                                                <ul style="list-style-type: circle;">
+                                                    <li><p>
+                                                        Seamlessly move currency between exchanges and wallets
+                                                    </p>
+                                                    </li>
+                                                    <li><p>
+                                                        Enhance your cross-exchange and currency arbitrage
+                                                        strategy
+                                                    </p></li>
+                                                    <li><p>
+                                                        Be the custodian of your own funds and eliminate exchange
+                                                        custodial risk
+                                                    </p></li>
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </section>
+                                <div class="vc_row-full-width vc_clearfix"></div>
+
+                                <section data-vc-full-width="true" data-vc-full-width-init="false"
+                                    class="vc_section vc_custom_1524115129040 vc_section-has-fill">
+                                    <div class="vc_row wpb_row vc_row-fluid" style=&quot;&quot;>
+
+                                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="stm-spacing" id="stm-spacing-60f93e93d72a0"></div>
+                                                    <script>
+                                                        (function ($) {
+                                                            "use strict";
+                                                            var spacingID = 'stm-spacing-60f93e93d72a0',
+                                                                lgSpacing = '100',
+                                                                mdSpacing = '70',
+                                                                smSpacing = '50',
+                                                                xsSpacing = '40';
+
+                                                            function stmSpacing() {
+                                                                if (window.matchMedia("(min-width: 1200px)").matches && lgSpacing) {
+                                                                    $('#' + spacingID).css("height", lgSpacing);
+                                                                } else if (window.matchMedia("(max-width: 1199px) and (min-width: 992px )").matches && mdSpacing) {
+                                                                    $('#' + spacingID).css("height", mdSpacing);
+                                                                } else if (window.matchMedia("(max-width: 991px) and (min-width: 768px )").matches && smSpacing) {
+                                                                    $('#' + spacingID).css("height", smSpacing);
+                                                                } else if (window.matchMedia("(max-width: 767px)").matches && xsSpacing) {
+                                                                    $('#' + spacingID).css("height", xsSpacing);
+                                                                } else {
+                                                                    $('#' + spacingID).css("height", "");
+                                                                }
+                                                            }
+
+                                                            $(document).ready(function () {
+                                                                stmSpacing();
+                                                            });
+
+                                                            $(window).resize(function () {
+                                                                stmSpacing();
+                                                            });
+
+                                                        })(jQuery);
+                                                    </script>
+
+                                                    <div class="vc_custom_heading text_align_center stripe_bottom">
+                                                        <h1 style="text-align: center">As seen in</h2>
+
+                                                    </div>
+
+
+                                                    <div class="staff_list advisors">
+                                                        <ul>
+
+                                                            <li class="stm_animation stm_viewport"
+                                                                data-animate="fadeInUp" data-animation-delay="0"
+                                                                data-animation-duration="1" data-viewport_position="90"
+                                                                style="opacity:1;-webkit-transition-delay: 0s; -moz-transition-delay: 0s; transition-delay: 0s;">
+                                                                <div class="inner_box animated fadeInUp"
+                                                                    style="opacity:1;-webkit-animation-delay:0s;-webkit-animation-duration:1s; -moz-animation-delay:0s;-moz-animation-duration:1s; animation-delay:0s;">
+
+
+                                                                    <div class="inner"
+                                                                        style="display: flex;justify-content: center;flex-direction: column;align-items: center;text-align: center;">
+                                                                        <h4 class="no_stripe">
+                                                                            <img
+                                                                                src="wp-content/uploads/sites/12/2018/05/Media_WSJ.png">
+                                                                        </h4>
+                                                                        <div class="">
+                                                                            <div class="">
+                                                                                <p>“Universal USD opens up decentralized,
+                                                                                    peer-to-peer networks to a variety
+                                                                                    of commercial uses.”
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+
+
+
+
+                                                                    </div>
+                                                            </li>
+                                                            <li class="stm_animation stm_viewport"
+                                                                data-animate="fadeInUp" data-animation-delay="0"
+                                                                data-animation-duration="1" data-viewport_position="90"
+                                                                style="opacity:1;-webkit-transition-delay: 0s; -moz-transition-delay: 0s; transition-delay: 0s;">
+                                                                <div class="inner_box animated fadeInUp"
+                                                                    style="opacity:1;-webkit-animation-delay:0s;-webkit-animation-duration:1s; -moz-animation-delay:0s;-moz-animation-duration:1s; animation-delay:0s;">
+
+
+                                                                    <div class="inner"
+                                                                        style="display: flex;justify-content: center;flex-direction: column;align-items: center;text-align: center;">
+                                                                        <div class="no_stripe">
+                                                                            <img
+                                                                                src="wp-content/uploads/sites/12/2018/05/Media_Coindesk.png">
+
+                                                                        </div>
+                                                                        <div class="stm_invis">
+                                                                            <div class="stm_excerpt">
+                                                                                <p>“Universal USD is the latest and perhaps
+                                                                                    most high-profile project to attempt
+                                                                                    to use the blockchain’s
+                                                                                    functionality as a ledger to move
+                                                                                    digital tokens that represent real
+                                                                                    currency.”
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                    </div>
+
+                                                                </div>
+                                                            </li>
+                                                            <li class="stm_animation stm_viewport"
+                                                                data-animate="fadeInUp" data-animation-delay="0"
+                                                                data-animation-duration="1" data-viewport_position="90"
+                                                                style="opacity:1;-webkit-transition-delay: 0s; -moz-transition-delay: 0s; transition-delay: 0s;">
+                                                                <div class="inner_box animated fadeInUp"
+                                                                    style="opacity:1;-webkit-animation-delay:0s; -webkit-animation-duration:1s; -moz-animation-delay:0s; -moz-animation-duration:1s; animation-delay:0s;">
+
+                                                                    <div class="inner"
+                                                                        style="display: flex;justify-content: center;flex-direction: column;align-items: center;text-align: center;">
+                                                                        <div class="no_stripe">
+                                                                            <img
+                                                                                src="wp-content/uploads/sites/12/2018/05/Media_CT.png">
+                                                                        </div>
+                                                                        <div class="stm_invis">
+                                                                            <div class="stm_excerpt">
+                                                                                <p>“Universal USD seeks to bring the stability
+                                                                                    and everyday utility of fiat
+                                                                                    currencies and revitalize them with
+                                                                                    a cryptocurrency infusion.”
+                                                                                </p>
+                                                                            </div>
+
+                                                                        </div>
+
+
+
+
+                                                                    </div>
+
+                                                                </div>
+                                                            </li>
+
+
+                                                        </ul>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </section>
+
+
+                                <div class="vc_row-full-width vc_clearfix"></div>
+
+                            </div>
+
+                        </article>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <footer id="footer" class="footer style_1">
+
+                <div class="widgets_row">
+                    <div class="container">
+                        <div class="footer_widgets">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                    <div class="footer_logo">
+                                        <img src="wp-content/themes/crypterio/assets/images/bg/header-logo.png"
+                                            class="img-fluid" style="width: 15rem;">
+                                    </div>
+                                    <div class="footer_text">
+                                        <div class="copyright">
+                                            Copyright &copy; 2021 Universal USD <a href="#" target="_blank"
+                                                data-wpel-link="external"
+                                                rel="nofollow external noopener noreferrer">Universal USD</a>. All
+                                            rights reserved
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+                                    <section id="recent-posts-3" class="widget widget_recent_entries">
+                                        <h4 class="widget_title no_stripe">Resources</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="#" data-wpel-link="internal">FAQs</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-wpel-link="internal">Knowledege Base</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-wpel-link="internal">White Paper</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-wpel-link="internal">Transparency</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-wpel-link="internal">Fees</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-wpel-link="internal">Legal</a>
+                                            </li>
+                                        </ul>
+
+                                    </section>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+                                    <section id="recent-posts-3" class="widget widget_recent_entries">
+                                        <h4 class="widget_title no_stripe">About</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="#" data-wpel-link="internal">Why Use Universal USD?</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-wpel-link="internal">Universal USD for Individuals</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-wpel-link="internal">Press</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-wpel-link="internal">About Us</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-wpel-link="internal">Branding</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-wpel-link="internal">Annocements</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-wpel-link="internal">Carres</a>
+                                            </li>
+                                        </ul>
+
+                                    </section>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                    <section id="nav_menu-2" class="widget widget_nav_menu">
+                                        <h4 class="widget_title no_stripe">Extra links</h4>
+                                        <div class="menu-extra-pages-container">
+                                            <ul id="menu-extra-pages" class="menu">
+                                                <li id="menu-item-3961"
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3961">
+                                                    <a href="#" data-wpel-link="internal">Contact Us</a>
+                                                </li>
+                                                <li id="menu-item-3962"
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3962">
+                                                    <a href="#" data-wpel-link="internal">Media Contact</a>
+                                                </li>
+                                                <li id="menu-item-3963"
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3963">
+                                                    <a href="#" data-wpel-link="internal">Twitter</a>
+                                                </li>
+                                                <li id="menu-item-3964"
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3964">
+                                                    <a href="#" data-wpel-link="internal">Facebook</a>
+                                                </li>
+                                                <li id="menu-item-3965"
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3965">
+                                                    <a href="#" data-wpel-link="internal">LinkedIn</a>
+                                                </li>
+                                                <li id="menu-item-3966"
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3966">
+                                                    <a href="#" data-wpel-link="internal">Telegram</a>
+                                                </li>
+                                                <li id="menu-item-3967"
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3967">
+                                                    <a href="#" data-wpel-link="internal">Universal USD Gold</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </section>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </footer>
+        </div>
+
+        <script type="text/javascript">
+            jQuery('document').ready(function () {
+                var $ = jQuery;
+                var api_url = 'https://stylemixthemes.scdn2.secure.raxcdn.com/api/prices.json';
+
+                $.ajax({
+                    url: api_url,
+                    dataType: 'json',
+                    context: this,
+                    complete: function (data) {
+                        var r = data.responseJSON;
+                        $('.stm_price_api').text(r.themes.crypterio.price);
+                    }
+                });
+
+
+                $('#crypterio-demos').on('click', function () {
+                    $('.stm_theme_demos__popup').addClass('opened');
+                    $('body').addClass('fancy-lock');
+                    $('.demos-list .demo img').each(function () {
+                        if (!$(this).hasClass('lazyloaded')) {
+                            var src = $(this).attr('data-src');
+                            $(this).attr('src', src).addClass('lazyloaded');
+                        }
+                    });
+                });
+
+                $('.stm_theme_demos__close').on('click', function () {
+                    $('.stm_theme_demos__popup').removeClass('opened');
+                    $('body').removeClass('fancy-lock');
+                })
+
+            });
+        </script>
+        <script>(function () {
+                function maybePrefixUrlField() {
+                    if (this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
+                        this.value = "http://" + this.value;
+                    }
+                }
+
+                var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
+                if (urlFields) {
+                    for (var j = 0; j < urlFields.length; j++) {
+                        urlFields[j].addEventListener('blur', maybePrefixUrlField);
+                    }
+                }
+            })();</script>
+        <script type="text/html" id="wpb-modifications"></script>
+        <link rel='stylesheet' id='crypterio-animate.min.css-css'
+            href='wp-content/themes/crypterio/assets/css/animate.minf661.css?ver=1626947218' type='text/css'
+            media='all' />
+        <link rel='stylesheet' id='vc_google_fonts_abril_fatfaceregular-css'
+            href='http://fonts.googleapis.com/css?family=Abril+Fatface%3Aregular&amp;ver=5.6.1' type='text/css'
+            media='all' />
+        <link rel='stylesheet' id='stm_services_grid-css'
+            href='wp-content/themes/crypterio/assets/css/shared/vc/stm_services_gridf661.css?ver=1626947218'
+            type='text/css' media='all' />
+        <link rel='stylesheet' id='stm_ico_list-css'
+            href='wp-content/plugins/stm-configurations/ico_directory/assets/css/stm_ico_list1a90.css?ver=1626947219'
+            type='text/css' media='all' />
+        <link rel='stylesheet' id='vc_font_awesome_5_shims-css'
+            href='wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/v4-shims.mine6df.css?ver=6.5.0'
+            type='text/css' media='all' />
+        <link rel='stylesheet' id='vc_font_awesome_5-css'
+            href='wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/all.mine6df.css?ver=6.5.0'
+            type='text/css' media='all' />
+        <link rel='stylesheet' id='owl.carousel-css'
+            href='wp-content/themes/crypterio/assets/css/owl.carouself661.css?ver=1626947218' type='text/css'
+            media='all' />
+        <script type='text/javascript' id='contact-form-7-js-extra'>
+            /* <![CDATA[ */
+            var wpcf7 = { "apiSettings": { "root": "https:\/\/crypterio.stylemixthemes.com\/icoagency\/wp-json\/contact-form-7\/v1", "namespace": "contact-form-7\/v1" }, "cached": "1" };
+/* ]]> */
+        </script>
+        <script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/scripts9dff.js?ver=5.3.2'
+            id='contact-form-7-js'></script>
+        <script type='text/javascript'
+            src='../../cdnjs.cloudflare.com/ajax/libs/money.js/0.2.0/money.mine480.js?ver=0.2.0'
+            id='money-js-js'></script>
+        <script type='text/javascript' id='vcw-script-js-before'>
+            var VirtualCoinWidgets = { ajax_url: "https://crypterio.stylemixthemes.com/icoagency/wp-admin/admin-ajax.php" };
+        </script>
+        <script type='text/javascript' src='wp-content/plugins/virtual_coin_widgets/assets/js/vcw.min605a.js?ver=2.2.2'
+            id='vcw-script-js'></script>
+        <script type='text/javascript' src='wp-content/themes/crypterio/assets/js/bootstrap.minf661.js?ver=1626947218'
+            id='bootstrap-js'></script>
+        <script type='text/javascript'
+            src='wp-content/themes/crypterio/assets/js/vendors/select2.minf661.js?ver=1626947218'
+            id='select2-js'></script>
+        <script type='text/javascript'
+            src='wp-content/themes/crypterio/assets/js/lazysizes-umd.minf661.js?ver=1626947218'
+            id='lazysizes-umd.min-js'></script>
+        <script type='text/javascript' src='wp-content/themes/crypterio/assets/js/customf661.js?ver=1626947218'
+            id='crypterio-custom-js'></script>
+        <script type='text/javascript'
+            src='wp-content/plugins/pearl-header-builder/assets/frontend/assets/js/app1a90.js?ver=1626947219'
+            id='stm_hb_scripts-js'></script>
+        <script type='text/javascript'
+            src='wp-content/plugins/pearl-header-builder/assets/frontend/assets/js/sticky1a90.js?ver=1626947219'
+            id='stm_hb_scripts_sticky-js'></script>
+        <script type='text/javascript' src='wp-includes/js/wp-embed.mind96d.js?ver=5.6.1' id='wp-embed-js'></script>
+        <script type='text/javascript'
+            src='wp-content/plugins/js_composer/assets/js/dist/js_composer_front.mine6df.js?ver=6.5.0'
+            id='wpb_composer_front_js-js'></script>
+        <script type='text/javascript'
+            src='wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.mine6df.js?ver=6.5.0'
+            id='isotope-js'></script>
+        <script type='text/javascript' src='wp-includes/js/imagesloaded.mineda1.js?ver=4.1.4'
+            id='imagesloaded-js'></script>
+        <script type='text/javascript' src='wp-content/themes/crypterio/assets/js/countUp.minf661.js?ver=1626947218'
+            id='countUp-js'></script>
+        <script type='text/javascript' src='wp-content/themes/crypterio/assets/js/particles.minf661.js?ver=1626947218'
+            id='particles-js'></script>
+        <script type='text/javascript'
+            src='wp-content/themes/crypterio/assets/js/owl.carousel.minf661.js?ver=1626947218'
+            id='owl.carousel-js'></script>
+        <script type='text/javascript' src='wp-content/plugins/mailchimp-for-wp/assets/js/forms.min447e.js?ver=4.7.7'
+            id='mc4wp-forms-api-js'></script>
+        <script
+            type="text/javascript">(function () { window['__CF$cv$params'] = { r: '67327e56b9ad0df5', m: '51b743af99c0eee655965a89ab09f663b3972ffa-1627017982-1800-AaM5z0tpNvfZQi9nv7R6gvK2p0CS8Jgj1pcgd3dgZ2T1jQpmA2Mh/l7WGFfU2acGzQnmFDXFn4KUIzmE9HecHSMkosmL397udW+Iv4Pfhia/vAq9gkbaiftnhzH6XqsxfQ==', s: [0xcedfecc7e7, 0x32ad4bde78], } })();</script>
+</body>
+
+</html>

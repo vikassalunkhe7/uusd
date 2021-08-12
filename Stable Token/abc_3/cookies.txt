@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+crypterio.stylemixthemes.com	TRUE	/	FALSE	1999999999	stm_post_watched	3632%2C1320%2C3636
+crypterio.stylemixthemes.com	TRUE	/	FALSE	1999999999	wordpress_test_cookie	WP+Cookie+check
+
